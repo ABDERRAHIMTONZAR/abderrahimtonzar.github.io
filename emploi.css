@@ -1,0 +1,13 @@
+body{
+    background-color: #f2f2f2;
+    background-image: url(../images/bg.svg);
+    background-repeat: repeat;
+    background-size: 250px;
+  }
+  .text1:hover{
+    background: linear-gradient(to bottom, green ,#39c40f);
+}
+.text1{
+    background-color: #0a5f97;
+    color: white;
+}

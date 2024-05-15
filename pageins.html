@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="pageins.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-image: url(baground.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+            <div class="container">
+                <!-- Logo à gauche -->
+                <a class="navbar-brand" href="#">
+                    <img src="Capture d’écran 2024-03-07 143020.png" alt="..." height="50">
+                </a>
+                <!-- Bouton de basculement pour le menu responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu à droite -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item hover">
+                            <a class="nav-link active" href="page1.html#hero-carousel" aria-current="page"
+                                style="color: blue;">ACCUEIL</a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="page1.html#service" aria-current="page" href="#"
+                                style="color: blue;">NOS
+                                SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="page1.html#activite" aria-current="page" href="#"
+                                style="color: blue;">ACTIVITES &
+                                EVENEMENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page1.html#admission-section" style="color: blue;">ADMISSION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="emploi.html" aria-current="page" href="#"
+                                style="color: blue;">EMPLOI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="page1.html#IA" aria-current="page" href="#"
+                                style="color: blue;">EDUC-AI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="page1.html#contact" aria-current="page" href="#"
+                                style="color: blue;">CONTACT</a>
+                        </li>
+                        <!-- Ajoutez d'autres éléments de menu ici -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <div class="card text-center">
+            <div class="card-header">
+                <h2 class="card-title" style="font-family: cursive;">Formulaire de pré-inscription à BTSALKENDY</h2>
+                <p class="mt-4 fs-5 text-uppercase" style="font-family: cursive;">Merci de bien vouloir renseigner le
+                    formulaire ci-dessous ou nous contacter:</p>
+            </div>
+        </div>
+        <br>
+
+        
+        <form action="connexion.php" method="post">
+
+            <div class="card text-center">
+                <div class="card text-center mx-auto" style="width: 80%; background-color: rgba(128, 128, 128, 0.295);">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="education-en-ligne.png" alt="" style="width: 4%; font-family: cursive;">
+                        <h4 class="mb-0 ms-2">ETUDIANT</h4>
+                    </div>
+                </div><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md">
+                            <label for="fullname" class="form-label">Nom de l'étudiant:</label>
+                            <input type="text" class="form-control" id="fullname" name="fullname">
+                        </div>
+                        <div class="col-md">
+                            <label for="gender" class="form-label">Sexe:</label>
+                            <select class="form-select" id="gender" name="gender">
+                                <option>-Choisir-</option>
+                                <option value="male">Garçon</option>
+                                <option value="female">Fille</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <label for="firstname" class="form-label">Prénom:</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname">
+                        </div>
+                        <div class="col-md">
+                            <label for="cityOfBirth" class="form-label">Ville de naissance:</label>
+                            <input type="text" class="form-control" id="cityOfBirth" name="cityOfBirth">
+                        </div>
+                        <div class="col-md">
+                            <label for="desiredField" class="form-label">Filière souhaitée:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="fieldRadio" id="dsi" value="DSI">
+                                <label class="form-check-label" for="dsi">DSI</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="fieldRadio" id="cg" value="CG">
+                                <label class="form-check-label" for="cg">CG</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="fieldRadio" id="ia" value="IA">
+                                <label class="form-check-label" for="ia">IA</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <label for="dateOfBirth" class="form-label">Date de naissance:</label>
+                            <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth"><br>
+                            <label for="bacNote" class="form-label">Note du BAC:</label>
+                            <input type="text" class="form-control" id="bacNote" name="bacNote">
+                        </div>
+                        <div class="col-md">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email"><br>
+                            <label for="fichier">Photo CIN</label><br>
+                            <input type="file" class="form-control-file" id="fichier">
+                        </div>
+                    </div><br><br>
+                </div>
+            </div>
+            <br><br>
+            <div class="card text-center">
+                <div class="card text-center mx-auto" style="width: 80%; background-color: rgba(128, 128, 128, 0.295);">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="info.png" alt="" style="width: 4%; font-family: cursive;">
+                        <h4 class="mb-0 ms-2">Informations complementaires</h4>
+                    </div>
+                </div><br>
+                <div class="container bg-white">
+                    <div class="row bg-white">
+                        <div class="col-md">
+                            <label for="guardianName" class="form-label">Nom du tuteur:</label>
+                            <input type="text" class="form-control" id="guardianName" name="guardianName">
+                        </div>
+                        <div class="col-md">
+                            <label for="phoneNumber" class="form-label">Numéro de téléphone:</label>
+                            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber"
+                                placeholder="+212 9999-999-999">
+                        </div>
+                    </div>
+                    <div class="row bg-white">
+                        <div class="col-md">
+                            <label for="guardianFirstName" class="form-label">Prénom du tuteur:</label>
+                            <input type="text" class="form-control" id="guardianFirstName" name="guardianFirstName">
+                        </div>
+                        <div class="col-md">
+                            <label for="profession" class="form-label">Profession:</label>
+                            <input type="text" class="form-control" id="profession" name="profession">
+                        </div>
+                    </div><br>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-primary" onclick="startLoading()">Envoyer</button>
+            </div><br>
+
+        <script>
+                function startLoading() {
+                    var fullName = document.getElementById('fullname').value;
+                    var email = document.getElementById('email').value;
+
+                    if (fullName.trim() === '' || email.trim() === '') {
+                        alert('Veuillez remplir tous les champs obligatoires.');
+                      
+                    }
+
+                    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        alert('Veuillez entrer une adresse e-mail valide.');
+                       
+                    }
+
+                    document.getElementById('redirectButton').innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Chargement...';
+
+                    var delay = 4000;
+
+                    setTimeout(function () {
+                        alert('Votre inscription est validée.');
+                        // Rediriger vers la page d'accueil
+                        window.location.href = "page1.html#hero-carousel";
+                    }, delay);
+                }
+            </script> <br>
+        </form>
+    </div><br><br>
+    <footer class="footer" style="background-color: #0a5f97; color: #ffffff;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4" style="font-family: cursive;">
+                    <h5 class="mb-4">Contact</h5>
+                    <p class="mb-2">École Al Kindi BTS Casablanca</p>
+                    <p class="mb-2">Téléphone : +123456789</p>
+                    <p class="mb-2">Email : info@ecolekindy.com</p>
+                </div>
+                <div class="col-md-4"style="font-family: cursive;">
+                    <h5 class="mb-4">Liens Utiles</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="page1.html#hero-carousel" class="text-white text-decoration-none">Accueil</a></li>
+                        <li><a href="page1.html#admission-section" class="text-white text-decoration-none">Admission</a></li>
+                        <li><a href="page1.html#activite" class="text-white text-decoration-none">Activités & Événements</a></li>
+                        <li><a href="page1.html#service" class="text-white text-decoration-none">Nos Services</a></li>
+                        <li><a href="emploi.html" class="text-white text-decoration-none">emploi</a></li>
+                        <li><a href="page1.html#IA" class="text-white text-decoration-none">EDUC IA</a></li>
+                        <li><a href="page1.html#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4" style="font-family: cursive;">
+                    <h5 class="mb-4">Suivez-nous</h5>
+                    <ul class="list-inline social-icons mb-0">
+                        <li class="list-inline-item me-3">
+                            <a href="https://www.facebook.com/share/Cu8CBUHJ8NgPG9E2/?mibextid=qi2Omg" target="_blank" class="text-white text-decoration-none">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item me-3">
+                            <a href="https://www.instagram.com/bts.elkindy?igsh=MW92MnBnZXp5aHp5MQ==" target="_blank" class="text-white text-decoration-none">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" class="text-white text-decoration-none">
+                                <i class="fab fa-twitter fa-lg"></i>
+                            </a>
+                        </li>
+                        <!-- Ajoutez ici d'autres liens vers d'autres réseaux sociaux -->
+                    </ul>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-4" style="background-color: #0d2b3e;">
+            <p class="mb-0">&copy; 2024 École Kindy. Tous droits réservés.</p>
+        </div>
+      </footer>
+      
+</body>
+
+</html>
