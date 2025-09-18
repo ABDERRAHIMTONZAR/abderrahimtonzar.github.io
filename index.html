@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="page1.css">
+  <title>abderrahimtonzar</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+      <div class="container">
+        <!-- Logo à gauche -->
+        <a class="navbar-brand" href="#">
+          <img src="photos/Capture d’écran 2024-03-07 143020.png" alt="..." height="50">
+        </a>
+        <!-- Bouton de basculement pour le menu responsive -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menu à droite -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item hover">
+              <a class="nav-link active" href="#hero-carousel" aria-current="page" style="color: blue;">ACCUEIL</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#service" aria-current="page" href="#" style="color: blue;">NOS
+                FORMATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#activite" aria-current="page" href="#" style="color: blue;">ACTIVITES &
+                EVENEMENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#admission-section" style="color: blue;">ADMISSION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="emploi.html" aria-current="page" href="#" style="color: blue;">EMPLOI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#section" aria-current="page" href="#" style="color: blue;">EDUC-AI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact" aria-current="page" href="#" style="color: blue;">CONTACT</a>
+            </li>
+
+            <!-- Ajoutez d'autres éléments de menu ici -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--SLIDER!-->
+
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="photos/KINDY PHOTO.jpg" class="d-block w-100 c-img" alt="Slide 1" loading="lazy">
+        <div class="carousel-caption top-50 ">
+          <h3 class="display-6 fw-bolder  text-primary3">Centre de formation BTS AL KENDY:</h3>
+          <p class="fs-5   text-uppercase">Incarne un bastion de l’excellence éducative dans le domaine numérique et
+            économique.</p>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="photos/test alumni.jpg" class="d-block w-100 c-img" alt="Slide 2" loading="lazy">
+        <div class="carousel-caption top-50 ">
+          <h3 class="display-6 fw-bolder  text-primary3">Embrassez l'Avenir:</h3>
+          <p class="fs-5  mt-5">Nous tracons la voie vers l'avenir numérique et économique pour obtenir votre brevet en
+            informatique, IA ou économie.</p>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="photos/ensemble.jpg" class="d-block w-100 c-img" alt="Slide 3" loading="lazy">
+        <div class="carousel-caption top-50   ">
+          <h3 class="display-6 fw-bolder  text-primary3"> Portail de l'Excellence:</h3>
+          <p class="fs-5  mt-5 ">VOTRE PORTAIL VERS L’EXCELLENCE ACADÉMIQUE ET PROFESSIONNELLE. Votre
+            Succès, Notre Engagement</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--Nos FORMATIONS!-->
+  <div class=" card mx-auto text-center "
+    style="background-image: url(photos/pngtree-abstract-white-and-gray-gradient-background-image_1111585.jpg); background-size: cover;">
+
+    <br>
+    <section id="service">
+      <h2 class="card-header text-center text-activite" style="color: black;">NOS FORMATIONS</h2>
+    </section>
+    <div class="card" style="background-color: transparent;">
+      <h5 class="card-header  text-center" style=" color: blue;"> Al Kendy, basé à Casablanca,
+        incarne l’excellence dans l’enseignement
+        supérieur en proposant une gamme diversifiée de filières au croisement du numérique et de l’économique.</h5>
+
+    </div>
+
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <img src="photos/les-donnees.png" class="card-img-top img-fluid custom-img  " alt="responsiveimage" >
+          <h5 class="card-title" style=" font-size: 30px;">Développement informatique</h5>
+          <p class="lead" style="font-size: 20px ;">Le développement informatique est au
+            cœur de notre programme académique à Al Kendy. Nous offrons une formation approfondie dans les langages
+            de programmation, les concepts de développement logiciel et les technologies émergentes. Nos étudiants
+            acquièrent les compétences nécessaires pour concevoir, développer et déployer des applications
+            logicielles innovantes dans un large éventail de domaines.</p>
+          <button type="button" id="redirectButton3" class="btn btn-lg rounded-pill btn-outline-primary"
+            onclick="window.location.href='pagedev.html';">En savoir plus</button>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img src="photos/intelligence-artificielle.png" class=" card-img-top img-fluid h-25 custom-img" alt="responsiveimage" >
+          <h5 class="card-title" style=" font-size: 30px;">Intélligence Artificille</h5>
+          <p class="class=lead" style="font-size: 20px ;">L'intelligence artificielle est l'un
+            des domaines les plus passionnants et en évolution rapide de notre époque. À Al Kendy, nous sommes
+            engagés à préparer nos étudiants à relever les défis et à saisir les opportunités offertes par l'IA. Nos
+            programmes couvrent les principes fondamentaux de l'apprentissage automatique, du traitement du langage
+            naturel, de la vision par ordinateur.</p>
+          <button type="button" id="redirectButton3" class="btn btn-lg rounded-pill btn-outline-primary"
+            onclick="window.location.href='pageia.html';">En savoir plus</button>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img src="photos/comptabilite.png" class="card-img-top img-fluid h-25 custom-img" alt="responsiveimage" >
+          <h5 class="card-title" style=" font-size: 30px;">Contabilité et gestion</h5>
+          <p class="lead" style="font-size: 20px ;">La comptabilité et la gestion sont des
+            piliers essentiels de toute organisation prospère. À Al Kendy, nous mettons l'accent sur l'enseignement
+            des principes comptables, de l'analyse financière, de la gestion stratégique et d'autres aspects clés de
+            la comptabilité et de la gestion d'entreprise. Nos étudiants sont préparés à des carrières dans la
+            finance, la comptabilité, la gestion d'entreprise.</p>
+          <button type="button" id="redirectButton3" class="btn btn-lg rounded-pill btn-outline-primary"
+            onclick="window.location.href='pagecg.html';">En savoir plus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Activites&evenements!-->
+  <div class="card mx-auto mt-0 text-center"
+    style="background-image: url(photos/bg-technologies.jpg); background-size: cover;">
+    <br>
+    <section id="activite">
+      <h2 class="card-header text-activite">ACTIVITÉS & ÉVÉNEMENTS</h2>
+    </section>
+    <h5 class="card-header text-activite">Au LYCEE AL KENDY, nous sommes convaincus que
+      les activités
+      parascolaires sont essentielles à la réussite. En lien avec la notion de plaisir à l’école, ces activités
+      étroitement supervisées par le personnel favorisent l’établissement de liens affectifs entre les élèves et
+      l’esprit de coopération.</h5><br>
+
+    <div class="row justify-content-center"> <!-- Utilisation d'une ligne avec justification du contenu au centre -->
+      <div class="col-md-3">
+        <div class="card h-100 " style=" background: linear-gradient(to bottom, #87CEEB ,#ffffff);">
+          <img class="card-img-top img-fluid" src="photos/jour intelligence.jpg" alt="Card image cap" style="height: 253px;">
+
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 30px;">Jour d’intelligence artificielle</h5>
+            <p class="card-text" style="font-size: 20px ;">Lors de la Journée d’Intégrité dédiée à
+              l’intelligence
+              artificielle à Al Kendy, notre
+              communauté éducative s’est engagée dans des discussions passionnantes et des réflexions approfondies,
+              soulignant notre engagement envers une utilisation éthique et responsable de cette technologie innovante.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card  h-100 " style="background: linear-gradient(to bottom, #87CEEB ,#ffffff);">
+          <img class="card-img-top img-fluid  " src="photos/jour independance.jpg" style="height: 253px;" alt="Card image cap">
+
+          <div class="card-body">
+            <h5 class="card-title  " style="font-size: 30px;">Fête de l’indépendance</h5>
+            <p class="card-text" style="font-size: 20px ;">
+              Lors de la célébration de la Fête de l'Indépendance à Al Kendy, notre communauté éducative s'est engagée
+              dans des célébrations enthousiasmantes et des moments de réflexion profonde, soulignant notre engagement
+              envers les valeurs de liberté, d'autonomie et de responsabilité civique.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 " style="background: linear-gradient(to bottom, #87CEEB ,#ffffff);">
+          <!-- Ajout de marges -->
+          <img class="card-img-top img-fluid " src="photos/8MARS.jpg" alt="Card image cap" style="height: 253px;">
+          <div class="card-body">
+            <h5 class="card-title" style=" font-size: 30px;">la Journée internationale de la femme
+            </h5>
+            <p class="card-text" style="font-size: 20px ;">Célébrer la Journée internationale de la
+              femme est une
+              occasion importante de reconnaître
+              les réalisations des femmes, de promouvoir l’égalité des sexes et de sensibiliser aux défis auxquels les
+              femmes sont confrontées dans le monde entier.</p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+
+  <!--Inscription!-->
+  <div class="card mx-auto text-center"
+    style="background-image: url(photos/pngtree-abstract-white-and-gray-gradient-background-image_1111585.jpg); background-size: cover;">
+
+    <br>
+    <section id="admission-section">
+      <h2 class="card-header text-primary1">ADMISSION AU GROUPE SCOLAIRE ALKENDY</h2>
+    </section>
+    <h5 class="card-header text-primary2 "> Les réinscriptions au Groupe Scolaire ALKENDY sont ouvertes au titre de
+      l’année scolaire
+      2 0 2 4 / 2 0 2 5</h5><br>
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card h-100 custom-card1">
+          <div class="card-body text-center">
+            <h3 class="card-title title-primary1" style="font-weight: bold; ">NOUVEAUX ÉTUDIANT
+            </h3>
+            <img class="  card-img-top img-fluid w-25 " src="photos/editer.png" alt="Card image cap">
+            <p class="card-text fs-4" style="">Nous vous invitons à compléter le formulaire de
+              demande d'inscription en ligne.
+            </p>
+            <button type="button" id="redirectButtoninsc" class="btn btn-lg rounded-pill btn-outline-primary"
+              onclick="window.location.href='pageins.html';" style="" ;>CLIQUER ICI POUR
+              S'INSCRIRE</button>
+
+            <br>
+            <p class="card-text fs-4" style=""> Veuillez prendre un moment pour explorer notre site
+              et découvrir tout ce que le
+              Lycée
+              Kindy a à offrir. De nos programmes académiques stimulants à nos activités parascolaires enrichissantes,
+              en passant par nos installations modernes, nous sommes déterminés à offrir à nos étudiants une expérience
+              éducative exceptionnelle.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card w-60 custom-card2">
+          <div class="card-body text-center">
+            <h3 class="card-title title-primary1" style="font-weight: bold;">RÉINSCRIPTION</h3>
+            <img class="card-img-top img-fluid  w-25 " src="photos/contracter.png" alt="Card image cap">
+            <p class="card-text fs-4" style="">Les réinscriptions sont ouvertes chaque année selon
+              le calendrier suivant:</p>
+            <p class="card-text fs-4" style=""> BTS : entre le 06 Octobre et le 20 Octobre.</p>
+            <p class="card-text fs-4" style=""> Les réinscriptions sont confirmées après le
+              règlement des frais annuels et la
+              décision
+              du conseil de classe.Après la date limite fixée par l’administration, tout élève non réinscrit sera
+              porté
+              sur la liste d’attente, et sa réinscription éventuelle ne pourra intervenir qu’à
+              partir du mois de Septembre suivant les places disponibles.</p>
+            <p class="card-text fs-4"> </p>
+
+          </div>
+        </div>
+      </div>
+
+    </div><br>
+  </div>
+
+
+
+  <!--EDUCIA!-->
+  <div class="card mx-auto" style="background-image: url(photos/blue.jpg); background-size: cover;">
+    <br>
+    <section id="section" class="text-center">
+      <img src="photos/logo.ico" style="width: 10%;">
+    </section><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <section id="IA">
+            <h5 class="card-title" style=" font-size: 30px; font-weight: bold;">L'INTELLIGENCE
+              ARTIFICIELLE AU SERVICE DE L'ÉDUCATION</h5>
+          </section>
+          <br>
+          <p class="card-text fs-4" style="font-size: 17px;"><span
+              style="color: red;font-weight: bold; ">EDUC-AI</span> donne à chaque etudiant le contenu dont il a
+            besoin
+            pour
+            renforcer ses connaissances, sa confiance en soi et développer une attitude positive envers les bases de
+            l'informatiques et mathematiques et la comptabilité.
+          </p>
+
+          <div class="icon-btn-block">
+  <img src="photos/education-en-ligne.png" alt="Étudiant">
+  <button type="button" class="btn btn-primary"
+    onclick="window.location.href='https://massarservice.men.gov.ma/moutamadris/Account';">
+    Accès de l'étudiant
+  </button>
+</div>
+
+<div class="icon-btn-block">
+  <img src="photos/PROF.png" alt="Professeurs">
+  <button type="button" class="btn btn-primary"
+    onclick="window.location.href='https://massarservice.men.gov.ma/moutamadris/Account';">
+    Accès Professeurs
+  </button>
+</div>
+
+<div class="icon-btn-block">
+  <img src="photos/directeur.png" alt="Directeurs">
+  <button type="button" class="btn btn-primary"
+    onclick="window.location.href='https://massarservice.men.gov.ma/moutamadris/Account';">
+    Accès Directeurs
+  </button>
+</div>
+
+
+        </div>
+        <div class="col-sm">
+          <img src="photos/educ-ai-img-1.png"  style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+
+  <!--CONTACT!-->
+  <div class="card mx-auto"
+    style="background-image: url(photos/plain-white-background-cnw05vrcsznafb3o-scaled.jpg);">
+    <br>
+    <section id="contact" class="text-center" style="background-color: transparent;">
+      <h2 class="card-header" style="">Contact</h2>
+    </section><br>
+
+    <div class="container">
+      <div class="row justify-content-lg-center">
+        <div class="col-12 col-lg-9">
+          <div class="bg-white border rounded shadow-sm overflow-hidden">
+
+            <form action="#!">
+              <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                <div class="col-12">
+                  <label for="fullname" class="form-label">Nom complet<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                      </svg>
+                    </span>
+                    <input type="email" class="form-control" id="email" name="email" value="" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="phone" class="form-label">Numéro de télephone</label>
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                          d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                      </svg>
+                    </span>
+                    <input type="tel" class="form-control" id="phone" name="phone" value="">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="d-grid">
+                    <div class="text-center mt-3">
+                      <button id="redirectButton2" type="button" class="btn1 btn-primary  text1" onclick="startLoading()"
+                        >ENVOYER</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div><br>
+   </div>
+   <script>
+    function startLoading() {
+        var fullName = document.getElementById('fullname').value;
+        var email = document.getElementById('email').value;
+
+        if (fullName.trim() === '' || email.trim() === '') {
+            alert('Veuillez remplir tous les champs obligatoires.');
+            return;
+        }
+
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Veuillez entrer une adresse e-mail valide.');
+            return;
+        }
+
+        // Afficher le message de chargement dans le bouton
+        document.getElementById('redirectButton2').innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Chargement...';
+
+        var delay = 4000;
+
+        setTimeout(function () {
+            // Afficher le message de validation
+            alert('Votre demande est validée.');
+            // Réinitialiser le bouton à son état initial
+            document.getElementById('redirectButton2').innerHTML = 'Envoyer';
+        }, delay);
+    }
+</script>
+
+
+<footer class="footer">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="mb-4">Contact</h5>
+        <p class="mb-2">École Al Kindi BTS Casablanca</p>
+        <p class="mb-2">Téléphone : +123456789</p>
+        <p class="mb-2">Email : info@ecolekindy.com</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="mb-4">Liens Utiles</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#hero-carousel">Accueil</a></li>
+          <li><a href="#admission-section">Admission</a></li>
+          <li><a href="#activite">Activités & Événements</a></li>
+          <li><a href="#service">Nos Services</a></li>
+          <li><a href="#IA">EDUC IA</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="mb-4">Suivez-nous</h5>
+        <ul class="list-inline social-icons mb-0">
+          <li class="list-inline-item me-3">
+            <a href="https://www.facebook.com/share/Cu8CBUHJ8NgPG9E2/?mibextid=qi2Omg" target="_blank">
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item me-3">
+            <a href="https://www.instagram.com/bts.elkindy?igsh=MW92MnBnZXp5aHp5MQ==" target="_blank">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" target="_blank">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom text-center py-3">
+    <p class="mb-0">&copy; 2024 École Kindy. Tous droits réservés.</p>
+  </div>
+</footer>
+
+
+
+
+</body>
+
+</html>

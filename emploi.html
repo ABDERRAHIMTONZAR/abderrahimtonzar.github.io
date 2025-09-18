@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="page1.css">
+</head>
+
+<body style="background-image: url(photos/baground.jpg);">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+            <div class="container">
+                <!-- Logo à gauche -->
+                <a class="navbar-brand" href="#">
+                    <img src="photos/Capture d’écran 2024-03-07 143020.png" alt="..." height="50">
+                </a>
+                <!-- Bouton de basculement pour le menu responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu à droite -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item hover">
+                            <a class="nav-link active" href="index.html#hero-carousel" aria-current="page"
+                                style="color: blue;">ACCUEIL</a>
+
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html#service" aria-current="page" href="#"
+                                style="color: blue;">NOS
+                                SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html#activite" aria-current="page" href="#"
+                                style="color: blue;">ACTIVITES &
+                                EVENEMENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#admission-section" style="color: blue;">ADMISSION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="emploi.html" aria-current="page" href="#"
+                                style="color: blue;">EMPLOI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html#IA" aria-current="page" href="#"
+                                style="color: blue;">EDUC-AI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html#contact" aria-current="page" href="#"
+                                style="color: blue;">CONTACT</a>
+                        </li>
+                        <!-- Ajoutez d'autres éléments de menu ici -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<div class="container mt-5">
+  <div class="card text-center">
+      <div class="card text-center">
+          <div class="card text-center mx-auto" style="width: 80%; background-color: rgba(128, 128, 128, 0.295);">
+              <div class="d-flex justify-content-center align-items-center">
+                  <img src="photos/document.png" alt="" style="width: 4%; ">
+                  <h4 class="mb-0 ms-2">EMPLOI DU TEMPS</h4>
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div  class="col-md">
+                  <label for="filiere" class="form-label">Choisir la filière :</label>
+                  <select id="filiere" class="form-select " >
+                      <option>-Choisir</option>
+                      <option value="DSI">DSI</option>
+                      <option value="CG">CG</option>
+                      <option value="IA">IA</option>
+                  </select><br>
+              </div>
+              <div  class="col-md">
+                  <label for="annee" class="form-label">Choisir l'année:</label>
+                  <select id="annee" class="form-select" >
+                      <option>-Choisir</option>
+                      <option value="1">1ère année</option>
+                      <option value="2">2ème année</option>
+                  </select>
+              </div>
+          </div>
+          <div class="text-center mt-4">
+              <button id="downloadButton" class="btn btn-primary text1" onclick="telechargerEmploiDuTemps()">Télécharger l'emploi du temps</button>
+          </div><br>
+      </div>
+  </div>
+</div>
+
+<script>
+  function telechargerEmploiDuTemps() {
+      var filiere = document.getElementById("filiere").value;
+      var annee = document.getElementById("annee").value;
+
+      // Vérifier si une filière et une année ont été sélectionnées
+      if (filiere === "" || annee.trim() === "") {
+          alert("Veuillez sélectionner une filière et une année.");
+          return;
+      }
+
+      var cheminPDF;
+
+      // Déterminer le chemin du fichier PDF en fonction de la filière et de l'année
+      if (filiere === "DSI") {
+          if (annee === "1") {
+              cheminPDF = "EmploiDuTemps/1DSI.pdf";
+          } else if (annee === "2") {
+              cheminPDF = "EmploiDuTemps/2DSI.pdf";
+          } else {
+              alert("Aucun emploi du temps disponible pour la filière et l'année sélectionnées.");
+              return;
+          }
+      } else if (filiere === "CG") {
+          if (annee === "1") {
+              cheminPDF = "EmploiDuTemps/1CG.pdf";
+          } else if (annee === "2") {
+              cheminPDF = "EmploiDuTemps/2CG.pdf";
+          } else {
+              alert("Aucun emploi du temps disponible pour la filière et l'année sélectionnées.");
+              return;
+          }
+      } else if (filiere === "IA") {
+          if (annee === "1") {
+              cheminPDF = "EmploiDuTemps/1IA.pdf";
+          } else if (annee === "2") {
+              cheminPDF = "EmploiDuTemps/2IA.pdf";
+          } else {
+              alert("Aucun emploi du temps disponible pour la filière et l'année sélectionnées.");
+              return;
+          }
+      } else {
+          alert("Filière non valide.");
+          return;
+      }
+
+      // Modifier le texte du bouton pour afficher "Chargement..."
+      document.getElementById("downloadButton").innerHTML = "Chargement...";
+
+      // Rediriger vers le PDF après un délai de 2 secondes
+      setTimeout(function() {
+          window.location.href = cheminPDF;
+      }, 4000);
+  }
+</script>
+<br><br><br>
+<footer class="footer">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="mb-4">Contact</h5>
+        <p class="mb-2">École Al Kindi BTS Casablanca</p>
+        <p class="mb-2">Téléphone : +123456789</p>
+        <p class="mb-2">Email : info@ecolekindy.com</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="mb-4">Liens Utiles</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#hero-carousel">Accueil</a></li>
+          <li><a href="#admission-section">Admission</a></li>
+          <li><a href="#activite">Activités & Événements</a></li>
+          <li><a href="#service">Nos Services</a></li>
+          <li><a href="#IA">EDUC IA</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="mb-4">Suivez-nous</h5>
+        <ul class="list-inline social-icons mb-0">
+          <li class="list-inline-item me-3">
+            <a href="https://www.facebook.com/share/Cu8CBUHJ8NgPG9E2/?mibextid=qi2Omg" target="_blank">
+              <i class="fab fa-facebook-f fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item me-3">
+            <a href="https://www.instagram.com/bts.elkindy?igsh=MW92MnBnZXp5aHp5MQ==" target="_blank">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" target="_blank">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom text-center py-3">
+    <p class="mb-0">&copy; 2024 École Kindy. Tous droits réservés.</p>
+  </div>
+</footer>
+
+  
+
+</body>
+</html>
